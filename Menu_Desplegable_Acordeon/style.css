@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo{
+    margin: 50px;
+}
+
+.Cmadre{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    height: 730px;
+    position:static;
+}
+
+.cont-menu{
+    width: 1430px;
+    margin: 0 30%;
+    border-radius: 15px;
+    height: 97px;
+}
+
+.cont-menu .cont-enlace{
+  
+    border-radius: 10px;
+}
+
+/* Estilos para las opciones */
+.cont-menu .cont-enlace .opcion{
+    display: flex;
+    justify-content: space-between;
+    background-color: #dfdfdf;
+    color: rgb(0, 0, 0);
+    padding: 13px 15px;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 1px #0000;
+    margin-bottom: 15px;
+    border: 2px solid #000;
+  
+}
+
+/* Estilos para el simbolo '+' */
+.cont-menu .cont-enlace .opcion .icono{
+    background-color: white;
+    color: #000541;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    width: 26px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Efecto para aparacer y desaparecer enlaces */
+
+.enlace{
+    width: 1430px;
+    margin-left: 0%;
+    margin: 15px 0s;
+    margin-bottom: 15px;
+    height: 97px;
+}
+
+.cont-menu .cont-enlace .enlace{
+    height: 0;
+    overflow: hidden;
+
+}
+
+.cont-menu .cont-enlace .animation{
+    height: 100%;
+}
+
+/* Estilos para los enlaces */
+.cont-menu .cont-enlace .enlace a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(0,0,0,.8);
+    background-color: #f3f3f3;
+    border-radius: 10px;
+        border: 2px solid #000;
+}
+
+#map{
+    height: 454px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contacto{
+    display: grid;
+    grid-template-columns: 0.1% 45.9% 45.9% 0.1%;
+    grid-template-rows: 454px;
+    gap: 30px;
+    justify-content: center;
+    position:static;
+}
+
+.contacto div:hover{
+    border: solid 5px #0000;
+    transition: 10s;
+}
+
+.correo{
+    display: grid;
+    grid-template-columns: 100% repeat(2, 50%);
+}
+
+.correo div:hover{
+    border: solid 5px #0000;
+    transition: 10s;
+}
+
+
+
+.name, .email,  .subject{
+    width: 100%;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    margin: 9px 0;
+}
+
+.CT{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    gap: 20px;
+}
+
+.email,  .subject{
+    width: 95%;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+.message{
+    width: 100%;
+    height: 278px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    margin: 9px 0;
+}
+

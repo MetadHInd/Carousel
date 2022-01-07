@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "strikesans";
+    src: url("fonts/KCStrikerSans.otf");
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1{
+    font-family: "strikesans";
+    font-size: 64px;
+    color: #000000;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif    ;  
+    
+}
+
+.header{
+    position: fixed;
+    background-color: #d5ebff54 ;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-bottom: 8px solid rgb(0, 0, 0);
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500x;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+  
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+    font-family: "strikesans";
+ 
+}
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+} 
+
+.nav-menu-link{
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover{
+    background: none;
+    color: #000000;
+ }
+
+.nav-toogle{
+    color: rgb(0, 0, 0);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px){
+ 
+    .header{
+       height: 60px; 
+    }
+    
+    .nav p{
+        font-size: 15px;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        margin-right: 20px;
+        align-items: center;
+        background-color: #ffffff ;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.5;
+    }
+    
+    .logo{
+        font-size: 25px;
+        padding: 0 40px;
+        line-height: 60px;
+        font-family: "strikesans";
+    }
+
+    .nav-menu-item{ 
+        line-height: 70px;
+    } 
+
+    .nav-menu-link:hover{
+        background: none;
+        color: #000000;
+     }
+    
+    .nav-toogle{
+        display: block;
+    }
+    
+    .nav-menu_visible{
+        left: 0;
+    }
+
+}
+
+.barra{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px;
+}
+
+.buscador{
+    display: grid;
+    grid-template-columns: 13.5% 73% 13.5% ;
+    place-items: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+@media (max-width: 1600px){
+    .buscador{
+        grid-template-columns: 2.5% 95% 2.5% ;
+    }
+    
+
+} 
+
+#buscador{
+    width: 60%;
+    height: 50px;
+    border-radius: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif    ; 
+    font-size: 20px;
+    text-align: center;
+}
+
+.buscador p{
+    font-size: 23px;
+}
+
+.titulo{
+    margin-bottom: 25px;
+}
+
+.titulo h1{
+    font-size: 34px;
+}
+
+.contenido{
+    margin-bottom: 25px;
+}
+.contenido p{
+    text-align: justify;
+    font-size: 23px;
+}
+
+.textoG{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    place-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+
+.imagen1{
+    width: 40%;
+    height: 40%;
+}
+
+
+.cuadricula{
+    display: grid;
+    grid-template-columns: 11.5% 28.5% 18% 28.5% 14.5%;
+    margin: 0%;
+    list-style: none;
+  
+}
+
+@media (max-width: 1600px){
+    .cuadricula{    
+        grid-template-columns: 0% 38.5% 20% 38.5% 3%;
+      
+    }
+    
+
+}
+
+
+
+.filtro{
+    display: none;
+}
+
+.final h1{
+    font-family: "strikesans";
+    font-size: 30px;
+    text-shadow: -6px -6px #222222;
+    color: #fff;
+}
+
+.final p{
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.final div{
+    background: #222222;
+    padding: 1em;
+}
+
+.final .columnas{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(4,75px);
+    text-align: center; 
+}
+
+@media (max-width: 1020px){
+
+    .final h1{
+        font-size: 25px;  
+    }
+    
+    .final p{
+        font-size: 15px;
+        color: #fff;
+    }
+}

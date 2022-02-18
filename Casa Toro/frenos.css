@@ -160,12 +160,6 @@ p{
     margin-top: 50px;
 }
 
-
-
-.visual div:hover{
-    border: 1px solid rgb(0, 0, 0);
-}
-
 .visual .titulo h1{
     font-family: "strikesans";
     font-size: 64px;
@@ -220,11 +214,6 @@ p{
     place-items: center;
 }
 
-
-
-.visual2 div:hover{
-    border: 1px solid rgb(0, 0, 0);
-}
 
 .visual2 .titulo h1{
     font-family: "strikesans";
